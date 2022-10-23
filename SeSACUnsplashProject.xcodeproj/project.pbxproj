@@ -20,6 +20,8 @@
 		DE5326F229056DB900A6CFDB /* CObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5326F129056DB900A6CFDB /* CObservable.swift */; };
 		DE5326F529056DEE00A6CFDB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DE5326F429056DEE00A6CFDB /* Alamofire */; };
 		DE5326F829056DFE00A6CFDB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DE5326F729056DFE00A6CFDB /* Kingfisher */; };
+		DE5326FA29056E7D00A6CFDB /* RandomPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5326F929056E7D00A6CFDB /* RandomPhoto.swift */; };
+		DE5326FC2905733A00A6CFDB /* UnsplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5326FB2905733A00A6CFDB /* UnsplashViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		DE5326EC29056D7F00A6CFDB /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		DE5326EE29056D8E00A6CFDB /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		DE5326F129056DB900A6CFDB /* CObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CObservable.swift; sourceTree = "<group>"; };
+		DE5326F929056E7D00A6CFDB /* RandomPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPhoto.swift; sourceTree = "<group>"; };
+		DE5326FB2905733A00A6CFDB /* UnsplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 				DE5326DB2904220200A6CFDB /* LaunchScreen.storyboard */,
 				DE5326DE2904220200A6CFDB /* Info.plist */,
 				DE5326F129056DB900A6CFDB /* CObservable.swift */,
+				DE5326F929056E7D00A6CFDB /* RandomPhoto.swift */,
+				DE5326FB2905733A00A6CFDB /* UnsplashViewModel.swift */,
 			);
 			path = SeSACUnsplashProject;
 			sourceTree = "<group>";
@@ -174,12 +180,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE5326E72904232C00A6CFDB /* RandomViewController.swift in Sources */,
+				DE5326FA29056E7D00A6CFDB /* RandomPhoto.swift in Sources */,
 				DE5326EF29056D8E00A6CFDB /* APIService.swift in Sources */,
 				DE5326EB2904233E00A6CFDB /* ListViewController.swift in Sources */,
 				DE5326E92904233600A6CFDB /* GetPhotoViewController.swift in Sources */,
 				DE5326F229056DB900A6CFDB /* CObservable.swift in Sources */,
 				DE5326D12904220000A6CFDB /* AppDelegate.swift in Sources */,
 				DE5326ED29056D7F00A6CFDB /* APIKey.swift in Sources */,
+				DE5326FC2905733A00A6CFDB /* UnsplashViewModel.swift in Sources */,
 				DE5326D32904220000A6CFDB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
