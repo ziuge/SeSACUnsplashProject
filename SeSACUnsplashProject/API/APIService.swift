@@ -5,6 +5,7 @@
 //  Created by CHOI on 2022/10/23.
 //
 
+import Foundation
 import Alamofire
 
 class APIService {
@@ -13,6 +14,20 @@ class APIService {
         let header: HTTPHeaders = ["Authorization": APIKey.authorization]
         
         AF.request(url, method: .get, headers: header).responseDecodable(of: RandomPhoto.self) { response in
+            let statusCode = response.response?.statusCode
+            
+            switch response.result {
+            case .success(let value): completion(value, statusCode, nil)
+            case .failure(let error): completion(nil, statusCode, error)
+            }
+        }
+    }
+    
+    static func listPhoto(completion: @escaping (PhotoResult?, Int?, Error?) -> Void) {
+        let url = "\(APIKey.listURL)"
+        let header: HTTPHeaders = ["Authorization": APIKey.authorization]
+        
+        AF.request(url, method: .get, headers: header).responseDecodable(of: PhotoResult.self) { response in
             let statusCode = response.response?.statusCode
             
             switch response.result {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE372377290901FF00098DE3 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = DE372376290901FF00098DE3 /* RxCocoa */; };
+		DE372379290901FF00098DE3 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DE372378290901FF00098DE3 /* RxSwift */; };
 		DE5326D12904220000A6CFDB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5326D02904220000A6CFDB /* AppDelegate.swift */; };
 		DE5326D32904220000A6CFDB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5326D22904220000A6CFDB /* SceneDelegate.swift */; };
 		DE5326D82904220000A6CFDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5326D62904220000A6CFDB /* Main.storyboard */; };
@@ -15,13 +17,13 @@
 		DE5326E72904232C00A6CFDB /* RandomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5326E62904232C00A6CFDB /* RandomViewController.swift */; };
 		DE5326E92904233600A6CFDB /* GetPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5326E82904233600A6CFDB /* GetPhotoViewController.swift */; };
 		DE5326EB2904233E00A6CFDB /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5326EA2904233E00A6CFDB /* ListViewController.swift */; };
-		DE5326ED29056D7F00A6CFDB /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5326EC29056D7F00A6CFDB /* APIKey.swift */; };
 		DE5326EF29056D8E00A6CFDB /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5326EE29056D8E00A6CFDB /* APIService.swift */; };
 		DE5326F229056DB900A6CFDB /* CObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5326F129056DB900A6CFDB /* CObservable.swift */; };
 		DE5326F529056DEE00A6CFDB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DE5326F429056DEE00A6CFDB /* Alamofire */; };
 		DE5326F829056DFE00A6CFDB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DE5326F729056DFE00A6CFDB /* Kingfisher */; };
-		DE5326FA29056E7D00A6CFDB /* RandomPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5326F929056E7D00A6CFDB /* RandomPhoto.swift */; };
+		DE5326FA29056E7D00A6CFDB /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5326F929056E7D00A6CFDB /* PhotoModel.swift */; };
 		DE5326FC2905733A00A6CFDB /* UnsplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5326FB2905733A00A6CFDB /* UnsplashViewModel.swift */; };
+		DEB604C52906A085006573F4 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB604C42906A085006573F4 /* APIKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,11 +37,11 @@
 		DE5326E62904232C00A6CFDB /* RandomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomViewController.swift; sourceTree = "<group>"; };
 		DE5326E82904233600A6CFDB /* GetPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPhotoViewController.swift; sourceTree = "<group>"; };
 		DE5326EA2904233E00A6CFDB /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
-		DE5326EC29056D7F00A6CFDB /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		DE5326EE29056D8E00A6CFDB /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		DE5326F129056DB900A6CFDB /* CObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CObservable.swift; sourceTree = "<group>"; };
-		DE5326F929056E7D00A6CFDB /* RandomPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomPhoto.swift; sourceTree = "<group>"; };
+		DE5326F929056E7D00A6CFDB /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 		DE5326FB2905733A00A6CFDB /* UnsplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashViewModel.swift; sourceTree = "<group>"; };
+		DEB604C42906A085006573F4 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +49,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE372377290901FF00098DE3 /* RxCocoa in Frameworks */,
 				DE5326F829056DFE00A6CFDB /* Kingfisher in Frameworks */,
+				DE372379290901FF00098DE3 /* RxSwift in Frameworks */,
 				DE5326F529056DEE00A6CFDB /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -78,6 +82,8 @@
 				DE5326D22904220000A6CFDB /* SceneDelegate.swift */,
 				DE5326D62904220000A6CFDB /* Main.storyboard */,
 				DE5326F029056D9200A6CFDB /* API */,
+				DEB604C229068515006573F4 /* Model */,
+				DEB604C32906851C006573F4 /* ViewModel */,
 				DE5326E62904232C00A6CFDB /* RandomViewController.swift */,
 				DE5326EA2904233E00A6CFDB /* ListViewController.swift */,
 				DE5326E82904233600A6CFDB /* GetPhotoViewController.swift */,
@@ -85,8 +91,6 @@
 				DE5326DB2904220200A6CFDB /* LaunchScreen.storyboard */,
 				DE5326DE2904220200A6CFDB /* Info.plist */,
 				DE5326F129056DB900A6CFDB /* CObservable.swift */,
-				DE5326F929056E7D00A6CFDB /* RandomPhoto.swift */,
-				DE5326FB2905733A00A6CFDB /* UnsplashViewModel.swift */,
 			);
 			path = SeSACUnsplashProject;
 			sourceTree = "<group>";
@@ -94,10 +98,26 @@
 		DE5326F029056D9200A6CFDB /* API */ = {
 			isa = PBXGroup;
 			children = (
-				DE5326EC29056D7F00A6CFDB /* APIKey.swift */,
+				DEB604C42906A085006573F4 /* APIKey.swift */,
 				DE5326EE29056D8E00A6CFDB /* APIService.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		DEB604C229068515006573F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE5326F929056E7D00A6CFDB /* PhotoModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DEB604C32906851C006573F4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE5326FB2905733A00A6CFDB /* UnsplashViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +139,8 @@
 			packageProductDependencies = (
 				DE5326F429056DEE00A6CFDB /* Alamofire */,
 				DE5326F729056DFE00A6CFDB /* Kingfisher */,
+				DE372376290901FF00098DE3 /* RxCocoa */,
+				DE372378290901FF00098DE3 /* RxSwift */,
 			);
 			productName = SeSACUnsplashProject;
 			productReference = DE5326CD2904220000A6CFDB /* SeSACUnsplashProject.app */;
@@ -151,6 +173,7 @@
 			packageReferences = (
 				DE5326F329056DEE00A6CFDB /* XCRemoteSwiftPackageReference "Alamofire" */,
 				DE5326F629056DFE00A6CFDB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				DE372375290901FF00098DE3 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = DE5326CE2904220000A6CFDB /* Products */;
 			projectDirPath = "";
@@ -180,13 +203,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE5326E72904232C00A6CFDB /* RandomViewController.swift in Sources */,
-				DE5326FA29056E7D00A6CFDB /* RandomPhoto.swift in Sources */,
+				DE5326FA29056E7D00A6CFDB /* PhotoModel.swift in Sources */,
 				DE5326EF29056D8E00A6CFDB /* APIService.swift in Sources */,
 				DE5326EB2904233E00A6CFDB /* ListViewController.swift in Sources */,
 				DE5326E92904233600A6CFDB /* GetPhotoViewController.swift in Sources */,
 				DE5326F229056DB900A6CFDB /* CObservable.swift in Sources */,
+				DEB604C52906A085006573F4 /* APIKey.swift in Sources */,
 				DE5326D12904220000A6CFDB /* AppDelegate.swift in Sources */,
-				DE5326ED29056D7F00A6CFDB /* APIKey.swift in Sources */,
 				DE5326FC2905733A00A6CFDB /* UnsplashViewModel.swift in Sources */,
 				DE5326D32904220000A6CFDB /* SceneDelegate.swift in Sources */,
 			);
@@ -408,6 +431,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		DE372375290901FF00098DE3 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 		DE5326F329056DEE00A6CFDB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -427,6 +458,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DE372376290901FF00098DE3 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE372375290901FF00098DE3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		DE372378290901FF00098DE3 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE372375290901FF00098DE3 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
 		DE5326F429056DEE00A6CFDB /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DE5326F329056DEE00A6CFDB /* XCRemoteSwiftPackageReference "Alamofire" */;
